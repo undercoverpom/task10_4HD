@@ -1,0 +1,24 @@
+<!-- views/error.ejs -->
+<%- include('header') %>
+    <header>
+        <div class="container-fluid bg-primary-subtle mb-4">
+            <div class="col-sm-8 mx-auto text-center py-2">
+                <h1 class="display-4">dKin Caps</h1>
+                <p class="lead">OOPS... Hit an error....</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>
+                <%= message %>
+            </h1>
+            <h2>
+                <%= error.status %>
+            </h2>
+            <pre><%= error.stack %></pre>
+            <a href="/" class="btn btn-primary mt-3">Return to Homepage</a>
+        </div>
+    </main>
+    <%- include('footer') %>

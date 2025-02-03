@@ -1,0 +1,32 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "Starter express web server template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/image-processing.js --dist-dir public_html/JS",
+    "watch": "parcel watch src/image-processing.js --dist-dir public_html/JS"
+  },
+  "keywords": [
+    "node",
+    "web",
+    "server",
+    "template",
+    "sit774"
+  ],
+  "author": "SIT774",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/blazeface": "^0.1.0",
+    "@tensorflow/tfjs": "^4.22.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "natural": "^8.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
